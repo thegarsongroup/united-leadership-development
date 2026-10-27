@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>United Leadership Development</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="United Leadership Development by Korlu: plain-language financial education in Brooklyn Park, MN. Join the waitlist to request a free introductory meeting with founder and financial educator Korlu Gaygay.">
+<meta property="og:title" content="United Leadership Development by Korlu">
+<meta property="og:description" content="Take the first step toward financial freedom. Join the waitlist for a free introductory meeting.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0f2a22">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"United Leadership Development by Korlu","founder":{"@type":"Person","name":"Korlu Gaygay","jobTitle":"Founder and Financial Educator"},"email":"gaygaykorlu@gmail.com","telephone":"+1-763-900-2029","address":{"@type":"PostalAddress","streetAddress":"7100 Northland Circle North, Suite #303","addressLocality":"Brooklyn Park","addressRegion":"MN","postalCode":"55428","addressCountry":"US"},"slogan":"We Rise by Lifting Each Other"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: editorial white page, hairline borders, a two-column hero where the waitlist form is the dominant object; everything else stacks in calm bands. */
+:root{
+  --bg:#ffffff;
+  --surface:#f6f8f7;
+  --ink:#0d1210;
+  --muted:#5a6661;
+  --line:#dfe5e2;
+  --accent:#1d5a46;      /* deep evergreen: growth, steady */
+  --accent-soft:#e6f0ec;
+  --accent-ink:#ffffff;
+  --contrib:#9aa7a1;
+  --danger:#a8321f;
+  --card:#ffffff;--stage:#0f2a22;--stage-ink:#f3f7f5;--stage-muted:#a9bdb5;--stage-line:#2c4a40;--stage-accent:#9fdcc0;--stage-glow:#1f5c4a;
+  --f-display:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --f-body:"Hanken Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --radius:10px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c0f0e;--surface:#141917;--ink:#eef2f0;--muted:#9aa6a1;--line:#26302c;
+  --accent:#7cc4a6;--accent-soft:#16251f;--accent-ink:#06100c;--contrib:#56635d;--danger:#ef8a76;--card:#18201d;--stage:#0b1a15;--stage-ink:#eef2f0;--stage-muted:#94aaa1;--stage-line:#22382f;--stage-accent:#7cc4a6;--stage-glow:#173f33;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c0f0e;--surface:#141917;--ink:#eef2f0;--muted:#9aa6a1;--line:#26302c;
+  --accent:#7cc4a6;--accent-soft:#16251f;--accent-ink:#06100c;--contrib:#56635d;--danger:#ef8a76;--card:#18201d;--stage:#0b1a15;--stage-ink:#eef2f0;--stage-muted:#94aaa1;--stage-line:#22382f;--stage-accent:#7cc4a6;--stage-glow:#173f33;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.05;letter-spacing:-.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+h2{font-size:clamp(2rem,4vw,3.1rem)}
+h3{font-size:1.6rem}
+p{margin:0}
+.eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lede{color:var(--muted);font-size:1.12rem;max-width:58ch}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:48px;padding:0 1.4em;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);font:600 1rem/1 var(--f-body);text-decoration:none;cursor:pointer;transition:transform .18s var(--ease),background .2s,color .2s}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--ink);background:transparent;color:var(--ink)}
+.btn.small{min-height:40px;padding:0 1.1em;font-size:.92rem}
+
+/* Header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.1}
+.brand b{font-family:var(--f-display);font-weight:400;font-size:1.35rem}
+.brand span{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+nav.links{display:flex;gap:26px}
+nav.links a{text-decoration:none;font-size:.95rem;color:var(--muted);transition:color .2s}
+nav.links a:hover{color:var(--ink)}
+@media (max-width:900px){nav.links{display:none}}
+
+.demo-flag{background:var(--accent-soft);border-bottom:1px solid var(--line);font-family:var(--f-mono);font-size:.74rem;letter-spacing:.04em;color:var(--ink)}
+.demo-flag .wrap{padding-block:8px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.demo-flag i{font-style:normal;background:var(--ink);color:var(--bg);padding:2px 8px;border-radius:4px;letter-spacing:.12em}
+
+/* Hero: a deep evergreen stage; the white waitlist card is the brightest object on the page */
+.hero{background:var(--stage);color:var(--stage-ink);padding-block:64px 80px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 80% at 85% 20%,color-mix(in srgb,var(--stage-glow) 55%,transparent),transparent 70%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);grid-template-areas:"copy form" "side form";column-gap:72px;row-gap:40px;align-items:start}
+.hero-copy{grid-area:copy;display:flex;flex-direction:column;gap:20px;padding-top:8px;min-width:0}
+.hero-copy .eyebrow,.hero-side .eyebrow{color:var(--stage-muted)}
+.hero-copy h1{font-size:clamp(2.7rem,5.6vw,4.8rem)}
+.hero-copy h1 em{font-style:italic;color:var(--stage-accent)}
+.hero-copy .lede{color:var(--stage-muted)}
+.hero-side{grid-area:side;display:grid;gap:28px;min-width:0}
+.assure{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--stage-line)}
+.assure li{display:grid;gap:2px;padding:16px 14px 0 0}
+.assure li+li{padding-left:14px;border-left:1px solid var(--stage-line)}
+.assure b{font-family:var(--f-display);font-weight:400;font-size:1.35rem}
+.assure span{font-size:.85rem;color:var(--stage-muted)}
+.next ol{margin:10px 0 0;padding:0;list-style:none;counter-reset:n;display:grid;gap:8px}
+.next li{counter-increment:n;display:flex;gap:12px;align-items:baseline;font-size:.97rem}
+.next li::before{content:counter(n);font-family:var(--f-mono);font-size:.72rem;width:22px;height:22px;border:1px solid var(--stage-line);border-radius:50%;display:inline-grid;place-items:center;flex:none;transform:translateY(-1px)}
+.tagline{font-family:var(--f-display);font-style:italic;font-size:1.3rem;color:var(--stage-muted)}
+@media (max-width:980px){
+  .hero{padding-block:28px 52px}
+  .hero-grid{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "form" "side";row-gap:26px}
+  .hero-copy{padding-top:0;gap:12px}
+  .hero-copy .lede{font-size:1rem}
+}
+@media (max-width:520px){.assure{grid-template-columns:1fr}.assure li+li{padding-left:0;border-left:0;border-top:1px solid var(--stage-line)}.assure li{padding:12px 0}}
+
+/* Form card */
+.form-card{grid-area:form;background:var(--card);color:var(--ink);border-radius:20px;padding:36px;box-shadow:0 40px 80px -30px rgba(0,0,0,.55),0 0 0 1px color-mix(in srgb,var(--stage-ink) 12%,transparent);min-width:0;position:relative}
+.form-card h2{font-size:clamp(2rem,3.2vw,2.6rem)}
+.form-card .sub{color:var(--muted);font-size:.95rem;margin-top:10px}
+.form-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.form-top .eyebrow{color:var(--accent)}
+.free-tag{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;background:var(--accent-soft);color:var(--accent);border-radius:999px;padding:4px 12px}
+.form-card .btn[type=submit]{min-height:56px;font-size:1.05rem}
+form{display:grid;gap:18px;margin-top:22px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row2{grid-template-columns:1fr}.form-card{padding:22px}}
+.field{display:grid;gap:6px;min-width:0}
+.field label,.legend{font-size:.86rem;font-weight:600}
+.opt{font-weight:400;color:var(--muted)}
+input[type=text],input[type=tel],input[type=email],select,textarea{width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg);color:var(--ink);font:400 1rem var(--f-body);transition:border-color .2s,box-shadow .2s}
+textarea{min-height:84px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px var(--accent-soft)}
+.field.invalid input{border-color:var(--danger)}
+.err{color:var(--danger);font-size:.82rem;min-height:0}
+.err:empty{display:none}
+details.more{border-top:1px solid var(--line);padding-top:14px}
+details.more summary{cursor:pointer;font-size:.92rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::after{content:"+";font-family:var(--f-mono);font-size:1.1rem;transition:transform .2s}
+details.more[open] summary::after{transform:rotate(45deg)}
+.more-body{display:grid;gap:18px;margin-top:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;cursor:pointer}
+.chip span{display:inline-flex;align-items:center;min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:999px;font-size:.88rem;transition:all .18s var(--ease);user-select:none}
+.chip input:checked+span{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;color:var(--muted)}
+.check input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent);flex:none}
+.privacy{font-size:.8rem;color:var(--muted);line-height:1.5}
+.form-card .btn{width:100%}
+.hp{position:absolute;left:-9999px}
+.success{display:grid;gap:14px;text-align:left;padding-block:10px;animation:rise .5s var(--ease)}
+.success .mark{width:52px;height:52px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:1.5rem}
+@keyframes rise{from{opacity:.4;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Sections */
+section.band{padding-block:88px;border-top:1px solid var(--line)}
+section.band.alt{background:var(--surface)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:44px}
+.sec-head .lede{justify-self:end}
+@media (max-width:900px){section.band{padding-block:60px}.sec-head{grid-template-columns:1fr;gap:14px;margin-bottom:30px}.sec-head .lede{justify-self:start}}
+
+.themes{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin-bottom:40px}
+.themes div{padding:20px 20px 4px 0;display:grid;gap:6px}
+.themes div+div{padding-left:20px;border-left:1px solid var(--line)}
+.themes b{font-family:var(--f-display);font-weight:400;font-size:1.5rem}
+.themes p{color:var(--muted);font-size:.95rem}
+@media (max-width:900px){.themes{grid-template-columns:1fr 1fr}.themes div:nth-child(3){border-left:0;padding-left:0}}
+@media (max-width:520px){.themes{grid-template-columns:1fr}.themes div+div{border-left:0;padding-left:0;border-top:1px solid var(--line)}}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px;background:var(--bg);transition:border-color .2s,transform .25s var(--ease)}
+.stat:hover{border-color:var(--ink);transform:translateY(-2px)}
+.stat .num{font-family:var(--f-display);font-size:4rem;line-height:.9;font-variant-numeric:tabular-nums}
+.stat .num sup{font-size:.45em;vertical-align:top;position:relative;top:.3em}
+.stat p{font-size:.98rem;flex:1}
+.stat .src{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;display:flex;justify-content:space-between;gap:8px}
+.stat .src a{color:var(--accent);text-underline-offset:3px}
+.stat-note{margin-top:18px;font-size:.84rem;color:var(--muted)}
+.swipe-hint{display:none}
+@media (max-width:900px){
+  .stats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding-bottom:10px;margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));padding-inline:max(20px,env(safe-area-inset-left,0px));scrollbar-width:none}
+  .stats::-webkit-scrollbar{display:none}
+  .stat{flex:0 0 78%;scroll-snap-align:start}
+  .swipe-hint{display:block;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);margin-top:10px}
+}
+
+/* Tools */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:980px){.tools{grid-template-columns:1fr}}
+.tool{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:22px;min-width:0}
+.tool-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.tool-head .eyebrow{color:var(--accent)}
+.ctrl{display:grid;gap:8px}
+.ctrl-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.ctrl-top label{font-size:.9rem;font-weight:600}
+.ctrl-top output,.ctrl-top input.numbox{font-family:var(--f-mono);font-variant-numeric:tabular-nums;font-size:.95rem}
+input.numbox{width:7.5em;min-height:36px;padding:4px 10px;text-align:right;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:28px;background:transparent;cursor:pointer;touch-action:pan-y}
+input[type=range]::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:linear-gradient(to right,var(--ink) var(--p,50%),var(--line) var(--p,50%))}
+input[type=range]::-moz-range-track{height:4px;border-radius:4px;background:var(--line)}
+input[type=range]::-moz-range-progress{height:4px;border-radius:4px;background:var(--ink)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;margin-top:-10px;border-radius:50%;background:var(--bg);border:2px solid var(--ink);transition:transform .15s}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:var(--bg);border:2px solid var(--ink)}
+input[type=range]:active::-webkit-slider-thumb{transform:scale(1.15)}
+.ctrls{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px}
+@media (max-width:520px){.ctrls{grid-template-columns:1fr}.tool{padding:20px}}
+.results{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink)}
+.results div{padding:14px 12px 0 0;display:grid;gap:2px;min-width:0}
+.results div+div{padding-left:12px;border-left:1px solid var(--line)}
+.results span{font-size:.78rem;color:var(--muted)}
+.results b{font-family:var(--f-mono);font-weight:500;font-size:1.15rem;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.results .hl b{color:var(--accent)}
+.chart{width:100%;height:auto;display:block}
+.chart .grid{stroke:var(--line);stroke-width:1}
+.chart .tick{fill:var(--muted);font:11px var(--f-mono)}
+.chart .a-growth{fill:var(--accent);opacity:.16}
+.chart .l-growth{fill:none;stroke:var(--accent);stroke-width:2.5}
+.chart .a-contrib{fill:var(--contrib);opacity:.28}
+.chart .l-contrib{fill:none;stroke:var(--contrib);stroke-width:2;stroke-dasharray:5 4}
+.chart .dot{fill:var(--accent);stroke:var(--bg);stroke-width:3}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.82rem;color:var(--muted)}
+.legend i{display:inline-block;width:18px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.assume{font-size:.8rem;color:var(--muted);border-left:2px solid var(--line);padding-left:12px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.seg button{min-height:38px;padding:0 16px;border:0;border-radius:999px;background:transparent;color:var(--ink);font:600 .88rem var(--f-body);cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.meter{display:grid;gap:10px}
+.meter-track{position:relative;height:18px;border-radius:999px;background:var(--surface);border:1px solid var(--line);overflow:hidden}
+.meter-fill{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:999px;transition:width .5s var(--ease)}
+.meter-scale{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.72rem;color:var(--muted)}
+.months{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.months span{height:44px;border-radius:6px;border:1px solid var(--line);position:relative;overflow:hidden;font-family:var(--f-mono);font-size:.68rem;color:var(--muted);display:flex;align-items:flex-end;justify-content:center;padding-bottom:4px}
+.months span::before{content:"";position:absolute;inset:auto 0 0 0;height:var(--h,0%);background:var(--accent-soft);transition:height .5s var(--ease);z-index:0}
+.months span em{position:relative;font-style:normal}
+.months span.full{border-color:var(--accent)}
+.soft-cta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:18px;font-size:.95rem}
+.soft-cta a{font-weight:600;text-underline-offset:4px;color:var(--accent)}
+.tools-note{margin-top:22px;font-size:.84rem;color:var(--muted);max-width:80ch}
+
+/* Steps */
+.steps{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s}
+.steps li{padding:26px 24px 8px 0;border-top:1px solid var(--ink);display:grid;gap:10px;align-content:start}
+.steps li+li{padding-left:24px}
+.steps .n{font-family:var(--f-mono);font-size:.78rem;color:var(--accent)}
+.steps h3{font-size:1.55rem}
+.steps p{color:var(--muted);font-size:.97rem}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr;gap:12px 24px}.steps li+li{padding-left:0}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+.expect-foot{margin-top:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding:22px 26px;border:1px solid var(--line);border-radius:14px}
+.expect-foot p{max-width:62ch;color:var(--muted)}
+
+/* About */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.portrait{position:relative;margin:0}
+.portrait img{width:100%;max-width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;border-radius:16px;display:block;background:var(--surface)}
+.portrait figcaption{position:absolute;left:14px;bottom:14px;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.about-copy{display:grid;gap:20px;min-width:0}
+.quote{font-family:var(--f-display);font-style:italic;font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.15;border-left:2px solid var(--accent);padding-left:20px}
+.placeholder{border:1px dashed var(--muted);border-radius:12px;padding:16px 18px;font-size:.93rem;color:var(--muted);background:var(--surface)}
+.placeholder b{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:6px;color:var(--ink)}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:28px}.portrait{max-width:420px}}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:1fr 1.6fr;gap:56px}
+.faq-list{border-top:1px solid var(--ink)}
+.faq-list details{border-bottom:1px solid var(--line)}
+.faq-list summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:600;font-size:1.05rem;min-height:48px}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"+";font-family:var(--f-mono);font-weight:400;font-size:1.3rem;transition:transform .25s var(--ease);flex:none}
+.faq-list details[open] summary::after{transform:rotate(45deg)}
+.faq-list .ans{padding:0 0 22px;color:var(--muted);max-width:62ch}
+@media (max-width:900px){.faq{grid-template-columns:1fr;gap:20px}}
+
+/* Footer */
+footer{background:var(--ink);color:var(--bg);padding-block:72px 40px}
+footer .wrap{display:grid;gap:48px}
+.f-top{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+footer h2{font-size:clamp(2rem,4vw,3rem)}
+footer .eyebrow{color:color-mix(in srgb,var(--bg) 60%,var(--ink))}
+.f-col{display:grid;gap:10px;align-content:start;min-width:0}
+.copyline{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.copyline span{font-size:1.02rem;user-select:all;overflow-wrap:anywhere}
+.copybtn{min-height:32px;padding:0 10px;border-radius:6px;border:1px solid color-mix(in srgb,var(--bg) 30%,var(--ink));background:transparent;color:inherit;font:500 .72rem var(--f-mono);cursor:pointer}
+.copybtn:hover{border-color:var(--bg)}
+footer .btn{background:var(--bg);color:var(--ink);border-color:var(--bg);justify-self:start}
+footer .btn:hover{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.f-bottom{border-top:1px solid color-mix(in srgb,var(--bg) 22%,var(--ink));padding-top:24px;display:grid;gap:14px;font-size:.82rem;color:color-mix(in srgb,var(--bg) 65%,var(--ink))}
+.f-bottom .links{display:flex;gap:20px;flex-wrap:wrap}
+.f-bottom button.linklike{background:none;border:0;padding:0;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.sources{font-family:var(--f-mono);font-size:.72rem;line-height:1.7;overflow-wrap:anywhere}
+.sources a{color:inherit}
+@media (max-width:900px){.f-top{grid-template-columns:1fr}footer{padding-block:56px 120px}}
+
+/* Privacy dialog (in-page) */
+.policy{margin-top:8px;padding:20px;border:1px solid color-mix(in srgb,var(--bg) 25%,var(--ink));border-radius:12px;display:grid;gap:10px;color:color-mix(in srgb,var(--bg) 82%,var(--ink));font-size:.88rem}
+.policy h3{font-size:1.4rem;color:var(--bg)}
+
+/* Sticky mobile CTA */
+.mcta{display:none}
+@media (max-width:900px){
+  .mcta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;gap:10px;align-items:center;justify-content:space-between;
+    padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+    background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);transition:transform .3s var(--ease)}
+  .mcta.away{transform:translateY(110%)}
+  .mcta p{font-size:.8rem;color:var(--muted);line-height:1.3}
+  .mcta .btn{flex:none}
+}
+
+.reveal{transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.js .reveal.pre{opacity:.001;transform:translateY(14px)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .reveal.pre{opacity:1;transform:none}}
+</style>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}body{margin:0}</style>
+
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="United Leadership Development by Korlu, home">
+      <b>United Leadership Development</b>
+      <span>by Korlu</span>
+    </a>
+    <nav class="links" aria-label="Sections">
+      <a href="#why">Why it matters</a>
+      <a href="#tools">Tools</a>
+      <a href="#expect">What to expect</a>
+      <a href="#korlu">Meet Korlu</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="#waitlist" data-focus-form>Join the waitlist</a>
+  </div>
+</header>
+
+
+<main id="top">
+  <!-- 1. HERO + WAITLIST -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Free introductory meeting · Brooklyn Park, MN</p>
+        <h1>Take the First Step Toward <em>Financial Freedom</em></h1>
+        <p class="lede">Understand your options. Set meaningful goals. Build confidence in your financial future, with plain-language guidance from founder and financial educator Korlu Gaygay.</p>
+      </div>
+
+      <div class="hero-side">
+        <ul class="assure" aria-label="About the introduction">
+          <li><b>Free</b><span>No cost for your introduction</span></li>
+          <li><b>No obligation</b><span>Ask questions, decide later</span></li>
+          <li><b>About a minute</b><span>Three required fields</span></li>
+        </ul>
+        <div class="next">
+          <p class="eyebrow">What happens after you join</p>
+          <ol>
+            <li>Your request goes on the waitlist.</li>
+            <li>Our team reaches out when a spot opens.</li>
+            <li>You meet Korlu for a free introduction at our office.</li>
+          </ol>
+        </div>
+        <p class="tagline">We Rise by Lifting Each Other.</p>
+      </div>
+
+      <div class="form-card" id="waitlist" tabindex="-1">
+        <div id="formView">
+          <div class="form-top">
+            <p class="eyebrow">Meeting waitlist</p>
+            <span class="free-tag">Free</span>
+          </div>
+          <h2>Request your free introduction</h2>
+          <p class="sub">Joining the waitlist is a <strong>request</strong>, not a booked appointment. We'll reach out to schedule when a spot opens.</p>
+
+          <form id="wlForm" novalidate>
+            <div class="hp" aria-hidden="true"><label for="wl-company">Company</label><input id="wl-company" name="company" type="text" tabindex="-1" autocomplete="off"></div>
+
+            <div class="field" data-f="name">
+              <label for="wl-name">Full name</label>
+              <input id="wl-name" name="name" type="text" autocomplete="name" required>
+              <p class="err" id="err-name" aria-live="polite"></p>
+            </div>
+            <div class="row2">
+              <div class="field" data-f="phone">
+                <label for="wl-phone">Phone number</label>
+                <input id="wl-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(763) 555-0123">
+                <p class="err" id="err-phone" aria-live="polite"></p>
+              </div>
+              <div class="field" data-f="email">
+                <label for="wl-email">Email address</label>
+                <input id="wl-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@example.com">
+                <p class="err" id="err-email" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <details class="more" id="wl-more">
+              <summary>Tell us a little more <span class="opt">&nbsp;(optional)</span></summary>
+              <div class="more-body">
+                <fieldset class="field" style="border:0;padding:0;margin:0">
+                  <legend class="legend">What would you like help with? <span class="opt">Pick any</span></legend>
+                  <div class="chips">
+                    <label class="chip"><input type="checkbox" name="goals" value="savings" id="g-sav"><span>Savings</span></label>
+                    <label class="chip"><input type="checkbox" name="goals" value="debt" id="g-debt"><span>Debt</span></label>
+                    <label class="chip"><input type="checkbox" name="goals" value="budgeting" id="g-bud"><span>Budgeting</span></label>
+                    <label class="chip"><input type="checkbox" name="goals" value="family-protection" id="g-fam"><span>Family protection / life insurance</span></label>
+                    <label class="chip"><input type="checkbox" name="goals" value="retirement-investing" id="g-ret"><span>Retirement / investing</span></label>
+                    <label class="chip"><input type="checkbox" name="goals" value="not-sure" id="g-ns"><span>Not sure yet</span></label>
+                  </div>
+                </fieldset>
+                <div class="field">
+                  <label for="wl-income">Household income range <span class="opt">(optional)</span></label>
+                  <select id="wl-income" name="income">
+                    <option value="">Choose a range</option>
+                    <option>Under $35,000</option>
+                    <option>$35,000 – $59,999</option>
+                    <option>$60,000 – $99,999</option>
+                    <option>$100,000 – $149,999</option>
+                    <option>$150,000 or more</option>
+                    <option>Prefer not to say</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="wl-note">Anything you'd like us to know? <span class="opt">(optional)</span></label>
+                  <textarea id="wl-note" name="note" maxlength="300" placeholder="One or two sentences is plenty."></textarea>
+                </div>
+              </div>
+            </details>
+
+            <label class="check"><input type="checkbox" id="wl-sms" name="smsConsent"><span>Optional: Text me updates and occasional educational tips from United Leadership Development. Message and data rates may apply. Reply STOP to opt out. Not required to join the waitlist.</span></label>
+
+            <p class="privacy">We use your information only to contact you about a free introduction. We do not sell it. See our <a href="#privacy" data-open-privacy>privacy policy</a>. Educational content only; not individualized financial, investment, insurance, legal or tax advice.</p>
+
+            <button class="btn" type="submit" id="wl-submit">Join the Meeting Waitlist</button>
+          </form>
+        </div>
+
+        <div id="successView" class="success" hidden role="status" aria-live="polite">
+          <div class="mark" aria-hidden="true">✓</div>
+          <h2>You are on the waitlist.</h2>
+          <p>We will contact you about the next available free introduction. This is not a confirmed appointment.</p>
+                    <button class="btn ghost" type="button" id="wl-reset">Start over</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. WHY -->
+  <section class="band" id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><p class="eyebrow">Why financial education matters</p><h2>Small decisions, made with confidence, add up.</h2></div>
+        <p class="lede">Most households are working toward the same four things. Knowing how each one works makes the next step easier to take.</p>
+      </div>
+      <div class="themes reveal">
+        <div><b>Savings</b><p>A cash cushion turns a surprise bill into an inconvenience instead of a crisis.</p></div>
+        <div><b>Protection</b><p>Understanding coverage helps families plan for the people who depend on them.</p></div>
+        <div><b>Legacy</b><p>Planning ahead lets you decide what you leave behind and for whom.</p></div>
+        <div><b>Long-term growth</b><p>Time and consistency do much of the work when money is set aside early.</p></div>
+      </div>
+
+      <div class="stats" aria-label="National survey statistics">
+        <article class="stat">
+          <p class="eyebrow">Life insurance</p>
+          <div class="num">51<sup>%</sup></div>
+          <p>of American adults reported owning some life insurance in 2025.</p>
+          <p class="src"><span>LIMRA / Life Happens, 2025</span><a href="https://www.limra.com/en/newsroom/news-releases/2025/adults-age-30-and-younger-overestimate-life-insurance-cost-by-1012-times/" target="_blank" rel="noopener">Source</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Coverage gap</p>
+          <div class="num">40<sup>%</sup></div>
+          <p>said they need life insurance, or more of it, in 2025.</p>
+          <p class="src"><span>LIMRA / Life Happens, 2025</span><a href="https://www.limra.com/en/newsroom/news-releases/2025/adults-age-30-and-younger-overestimate-life-insurance-cost-by-1012-times/" target="_blank" rel="noopener">Source</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">A $400 surprise</p>
+          <div class="num">63<sup>%</sup></div>
+          <p>of U.S. adults could cover a hypothetical $400 emergency with cash or its equivalent in 2025.</p>
+          <p class="src"><span>Federal Reserve, pub. May 2026</span><a href="https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm" target="_blank" rel="noopener">Source</a></p>
+        </article>
+        <article class="stat">
+          <p class="eyebrow">Rainy-day fund</p>
+          <div class="num">55<sup>%</sup></div>
+          <p>of adults had rainy-day savings covering three months of expenses in 2024.</p>
+          <p class="src"><span>Federal Reserve, pub. May 2025</span><a href="https://www.federalreserve.gov/publications/2025-economic-well-being-of-us-households-in-2024-savings-and-investments.htm" target="_blank" rel="noopener">Source</a></p>
+        </article>
+      </div>
+      <p class="swipe-hint">Swipe for more →</p>
+      <p class="stat-note">These figures describe national surveys of U.S. adults. They are not predictions about any individual's situation.</p>
+    </div>
+  </section>
+
+  <!-- 3. TOOLS -->
+  <section class="band alt" id="tools">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><p class="eyebrow">Try it yourself</p><h2>Two quick tools to see where you stand.</h2></div>
+        <p class="lede">Move the sliders and the numbers update as you go. Nothing you enter here leaves your browser.</p>
+      </div>
+
+      <div class="tools">
+        <!-- A. Growth -->
+        <article class="tool" aria-labelledby="t-growth">
+          <div class="tool-head"><h3 id="t-growth">Your Growth Potential</h3><p class="eyebrow">Compound growth</p></div>
+          <div class="ctrls">
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="g-monthly">Monthly contribution</label><output id="o-monthly" for="g-monthly"></output></div>
+              <input type="range" id="g-monthly" min="0" max="2000" step="25" value="250">
+            </div>
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="g-start">Starting balance</label><input class="numbox" id="g-start-num" type="text" inputmode="numeric" aria-label="Starting balance in dollars"></div>
+              <input type="range" id="g-start" min="0" max="50000" step="500" value="1000" aria-label="Starting balance slider">
+            </div>
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="g-years">Years</label><output id="o-years" for="g-years"></output></div>
+              <input type="range" id="g-years" min="1" max="40" step="1" value="20">
+            </div>
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="g-rate">Hypothetical annual return</label><output id="o-rate" for="g-rate"></output></div>
+              <input type="range" id="g-rate" min="0" max="10" step="0.5" value="6">
+            </div>
+          </div>
+
+          <div class="results" aria-live="polite">
+            <div><span>You contribute</span><b id="r-contrib">—</b></div>
+            <div><span>Illustrative growth</span><b id="r-growth">—</b></div>
+            <div class="hl"><span>Ending balance</span><b id="r-total">—</b></div>
+          </div>
+
+          <div>
+            <svg class="chart" id="growthChart" viewBox="0 0 600 260" role="img" aria-label="Chart comparing total contributions with illustrative balance over time"></svg>
+            <div class="legend"><span><i style="background:var(--contrib)"></i>Your contributions</span><span><i style="background:var(--accent)"></i>Illustrative balance</span></div>
+          </div>
+
+          <p class="assume">Assumptions: contributions at the end of each month, monthly compounding, a constant hypothetical return, and no taxes, fees or inflation. Real returns vary and can be negative. This is an illustration, not a guarantee or investment advice.</p>
+          <div class="soft-cta"><span>Want help building a plan?</span><a href="#waitlist" data-focus-form>Join the meeting waitlist →</a></div>
+        </article>
+
+        <!-- B. Savings cushion -->
+        <article class="tool" aria-labelledby="t-cushion">
+          <div class="tool-head"><h3 id="t-cushion">Build Your Savings Cushion</h3><p class="eyebrow">Emergency fund</p></div>
+          <div class="ctrls">
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="c-ess">Monthly essentials</label><output id="o-ess" for="c-ess"></output></div>
+              <input type="range" id="c-ess" min="500" max="10000" step="50" value="3200">
+            </div>
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="c-cur">Current savings</label><output id="o-cur" for="c-cur"></output></div>
+              <input type="range" id="c-cur" min="0" max="40000" step="100" value="2500">
+            </div>
+            <div class="ctrl">
+              <div class="ctrl-top"><label for="c-mon">Saving each month</label><output id="o-mon" for="c-mon"></output></div>
+              <input type="range" id="c-mon" min="0" max="3000" step="25" value="400">
+            </div>
+            <div class="ctrl">
+              <div class="ctrl-top"><span class="legend" id="lbl-target">Target</span></div>
+              <div class="seg" role="group" aria-labelledby="lbl-target">
+                <button type="button" id="c-t3" data-m="3" aria-pressed="true">3 months</button>
+                <button type="button" id="c-t6" data-m="6" aria-pressed="false">6 months</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="results" aria-live="polite">
+            <div><span>Your goal</span><b id="r-goal">—</b></div>
+            <div><span>Still to save</span><b id="r-short">—</b></div>
+            <div class="hl"><span>Est. time to goal</span><b id="r-months">—</b></div>
+          </div>
+
+          <div class="meter">
+            <div class="meter-track" role="progressbar" id="c-bar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progress toward savings goal"><div class="meter-fill" id="c-fill"></div></div>
+            <div class="meter-scale"><span id="c-pct">0% funded</span><span id="c-goal-lbl"></span></div>
+            <div class="months" id="c-months" aria-hidden="true"></div>
+          </div>
+
+          <p class="assume">Each block is one month of essential expenses. Estimates assume the same monthly savings every month and do not include interest. Educational illustration only.</p>
+          <div class="soft-cta"><span>Want help building a plan?</span><a href="#waitlist" data-focus-form>Join the meeting waitlist →</a></div>
+        </article>
+      </div>
+      <p class="tools-note">These calculators are for learning. They don't know your full situation and aren't individualized financial, investment, insurance, legal or tax advice.</p>
+    </div>
+  </section>
+
+  <!-- 4. EXPECT -->
+  <section class="band" id="expect">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div><p class="eyebrow">Your free introduction</p><h2>What to expect, step by step.</h2></div>
+        <p class="lede">No pressure and no jargon. The first meeting is about understanding where you are and what you want.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="n">STEP 1</span><h3>Join the waitlist</h3><p>Share your name, phone and email. It takes about a minute, and the extra questions are optional.</p></li>
+        <li><span class="n">STEP 2</span><h3>We reach out</h3><p>When a spot opens, our team contacts you to find a time for your free introduction at our Brooklyn Park office.</p></li>
+        <li><span class="n">STEP 3</span><h3>A real conversation</h3><p>Talk through your goals, your questions and what feels most pressing, whether that's saving, debt or protecting your family.</p></li>
+        <li><span class="n">STEP 4</span><h3>Leave with clarity</h3><p>Walk away understanding your options and the next steps you might take. What you do next is always your choice.</p></li>
+      </ol>
+      <div class="expect-foot reveal">
+        <p>Spots are limited, so introductions are scheduled in the order requests come in.</p>
+        <a class="btn" href="#waitlist" data-focus-form>Join the Meeting Waitlist</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. KORLU -->
+  <section class="band alt" id="korlu">
+    <div class="wrap about">
+      <figure class="portrait reveal">
+        <!-- Replace src with the final branded portrait when ready -->
+        <img src="assets/korlu.jpg" alt="Korlu Gaygay, founder of United Leadership Development" width="720" height="865" loading="lazy" decoding="async">
+        <figcaption>Founder · Financial Educator</figcaption>
+      </figure>
+      <div class="about-copy">
+        <p class="eyebrow">Meet Korlu</p>
+        <h2>Korlu Gaygay</h2>
+        <p class="lede">Founder and financial educator at United Leadership Development, helping individuals and families in the Twin Cities feel more confident about money.</p>
+        <div class="placeholder"><b>Bio placeholder</b>Add Korlu's approved biography here: background, why she started United Leadership Development, and the communities she serves. Include credentials or licenses only after they are verified and approved for publication.</div>
+        <p class="quote">“We Rise by Lifting Each Other.”</p>
+        <div><a class="btn" href="#waitlist" data-focus-form>Request a free introduction</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FAQ -->
+  <section class="band" id="faq">
+    <div class="wrap faq">
+      <div class="reveal"><p class="eyebrow">Questions</p><h2>Good to know before you sign up.</h2></div>
+      <div class="faq-list">
+        <details><summary>Is the introductory meeting really free?</summary><p class="ans">Yes. The introduction is free and there is no obligation to do anything afterward.</p></details>
+        <details><summary>Does joining the waitlist book an appointment?</summary><p class="ans">No. Joining the waitlist is a request. Our team will contact you when a spot opens to find a time that works for you. Your meeting is confirmed only after you hear from us.</p></details>
+        <details><summary>Where do meetings happen?</summary><p class="ans">At our office: 7100 Northland Circle North, Suite #303, Brooklyn Park, MN 55428.</p></details>
+        <details><summary>Do I have to share my income?</summary><p class="ans">No. Income range is optional, and "Prefer not to say" is always fine. Only your name, phone number and email are required.</p></details>
+        <details><summary>Is this financial advice?</summary><p class="ans">The content on this site, including the calculators, is general education. It is not individualized financial, investment, insurance, legal or tax advice.</p></details>
+        <details><summary>What happens to my information?</summary><p class="ans">We use it only to contact you about your free introduction, and we don't sell it. Text messages are sent only if you check the separate SMS box. See the privacy policy at the bottom of this page.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 7. FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div class="f-col">
+        <p class="eyebrow">United Leadership Development by Korlu</p>
+        <h2>Build Today. Secure Tomorrow. Live Your Freedom.</h2>
+        <a class="btn" href="#waitlist" data-focus-form>Join the Meeting Waitlist</a>
+      </div>
+      <div class="f-col">
+        <p class="eyebrow">Contact</p>
+        <p>Korlu Gaygay</p>
+        <div class="copyline"><span id="c-email">gaygaykorlu@gmail.com</span><button class="copybtn" type="button" data-copy="c-email">Copy</button></div>
+        <div class="copyline"><span id="c-phone">(763) 900-2029</span><button class="copybtn" type="button" data-copy="c-phone">Copy</button></div>
+      </div>
+      <div class="f-col">
+        <p class="eyebrow">Office</p>
+        <address style="font-style:normal">7100 Northland Circle North<br>Suite #303<br>Brooklyn Park, MN 55428</address>
+        <p class="eyebrow" style="margin-top:6px">By request · introductions scheduled after you join the waitlist</p>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <div class="links"><button class="linklike" type="button" id="privacyToggle" aria-expanded="false" aria-controls="privacy">Privacy policy</button><span>© 2026 United Leadership Development</span></div>
+      <div id="privacy" class="policy" hidden>
+        <h3>Privacy policy</h3>
+        <p><strong>Placeholder.</strong> Replace with a reviewed privacy policy before launch. It should cover: what we collect (name, phone, email and optional goals, income range and note), why (to contact you about a free introduction), how it is stored and protected, how long it is kept, SMS consent and how to opt out, that information is not sold, and how to request deletion by contacting gaygaykorlu@gmail.com.</p>
+      </div>
+      <p>Educational content only. Nothing on this site is individualized financial, investment, insurance, legal or tax advice. Statistics describe national surveys and are not predictions about any individual.</p>
+      <p class="sources">Sources: LIMRA, “Adults age 30 and younger overestimate life insurance cost” (2025) — <a href="https://www.limra.com/en/newsroom/news-releases/2025/adults-age-30-and-younger-overestimate-life-insurance-cost-by-1012-times/" target="_blank" rel="noopener">limra.com</a> · Federal Reserve press release, May 13, 2026 — <a href="https://www.federalreserve.gov/newsevents/pressreleases/other20260513a.htm" target="_blank" rel="noopener">federalreserve.gov</a> · Federal Reserve, Economic Well-Being of U.S. Households in 2024: Savings and Investments — <a href="https://www.federalreserve.gov/publications/2025-economic-well-being-of-us-households-in-2024-savings-and-investments.htm" target="_blank" rel="noopener">federalreserve.gov</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="mcta" id="mcta">
+  <p>Free introductory meeting<br><strong style="color:var(--ink)">Spots are limited</strong></p>
+  <a class="btn small" href="#waitlist" data-focus-form>Join the waitlist</a>
+</div>
+
+<script>
+/* ============================================================
+   WAITLIST SUBMISSION CONNECTOR
+   ------------------------------------------------------------
+   MODE "demo": nothing is stored or transmitted.
+   To go live, set MODE = "live" and ENDPOINT to your own HTTPS
+   backend (e.g. a serverless function, Formspree, HubSpot, or a
+   CRM webhook). Before switching, the backend MUST provide:
+     1. Secure storage (encrypted at rest, access-controlled)
+     2. Anti-spam: server-side check of the honeypot field below,
+        rate limiting, and ideally CAPTCHA/Turnstile verification
+     3. Consent records: store consent.text, consent.version and
+        consent.timestamp with each record, and SMS opt-in separately
+     4. Duplicate handling and an opt-out / deletion process
+   The payload shape is built in buildPayload().
+   ============================================================ */
+const WAITLIST = {
+  MODE: "live",          // "demo" | "live"
+  // Paste your Formspree form endpoint here, e.g. "https://formspree.io/f/abcdwxyz"
+  ENDPOINT: "PASTE_FORMSPREE_ENDPOINT_HERE",
+  CONSENT_VERSION: "2026-10-v1",
+  async submit(payload){
+    if (this.MODE === "demo"){
+      await new Promise(r => setTimeout(r, 650)); // simulate latency only
+      return { ok: true, demo: true };
+    }
+    if (!/^https:\/\/formspree\.io\/f\/\w+/.test(this.ENDPOINT)) throw new Error("not-configured");
+    // Formspree expects flat fields; "email" becomes the reply-to, "_gotcha" is its honeypot.
+    const flat = {
+      _subject: "New waitlist request: " + payload.name,
+      name: payload.name, email: payload.email, phone: payload.phone,
+      goals: payload.goals.join(", ") || "—",
+      income_range: payload.incomeRange || "—",
+      note: payload.note || "—",
+      contact_consent: payload.consent.contact.text,
+      sms_consent: payload.consent.sms ? "YES: " + payload.consent.sms.text : "No",
+      consent_version: this.CONSENT_VERSION,
+      submitted_at: payload.meta.submittedAt,
+      _gotcha: payload.meta.honeypot
+    };
+    const res = await fetch(this.ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify(flat)
+    });
+    if (!res.ok) throw new Error("Request failed (" + res.status + ")");
+    return { ok: true, demo: false };
+  }
+};
+
+document.documentElement.classList.add("js");
+const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const usd = new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0});
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function haptic(ms=8){ try{ if(!reduceMotion && navigator.vibrate) navigator.vibrate(ms); }catch(e){} }
+
+/* ---------- Form ---------- */
+const form = $("#wlForm");
+const smsText = () => $("#wl-sms").nextElementSibling.textContent.trim();
+const validators = {
+  name: v => v.trim().length >= 2 ? "" : "Please enter your full name.",
+  phone: v => v.replace(/\D/g,"").replace(/^1(?=\d{10}$)/,"").length === 10 ? "" : "Please enter a 10-digit U.S. phone number.",
+  email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? "" : "Please enter an email like name@example.com."
+};
+function check(key, show=true){
+  const input = $("#wl-"+key), wrap = input.closest(".field"), msg = validators[key](input.value);
+  if (show){
+    $("#err-"+key).textContent = msg;
+    wrap.classList.toggle("invalid", !!msg);
+    input.setAttribute("aria-invalid", msg ? "true" : "false");
+    if (msg) input.setAttribute("aria-describedby","err-"+key); else input.removeAttribute("aria-describedby");
+  }
+  return !msg;
+}
+Object.keys(validators).forEach(k=>{
+  const el = $("#wl-"+k);
+  el.addEventListener("blur", ()=>{ if(el.value) check(k); });
+  el.addEventListener("input", ()=>{ if(el.closest(".field").classList.contains("invalid")) check(k); });
+});
+$("#wl-phone").addEventListener("input", e=>{
+  const d = e.target.value.replace(/\D/g,"").replace(/^1(?=\d{10})/,"").slice(0,10);
+  if (e.inputType && e.inputType.startsWith("delete")) return;
+  e.target.value = d.length>6 ? `(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}` : d.length>3 ? `(${d.slice(0,3)}) ${d.slice(3)}` : d;
+});
+$("#g-ns").addEventListener("change", e=>{ if(e.target.checked) $$('input[name=goals]').forEach(c=>{ if(c.id!=="g-ns") c.checked=false; }); });
+$$('input[name=goals]').forEach(c=>{ if(c.id!=="g-ns") c.addEventListener("change",()=>{ if(c.checked) $("#g-ns").checked=false; haptic(); }); });
+
+function buildPayload(){
+  const fd = new FormData(form);
+  const now = new Date().toISOString();
+  return {
+    name: fd.get("name").trim(),
+    phone: fd.get("phone").replace(/\D/g,""),
+    email: fd.get("email").trim().toLowerCase(),
+    goals: fd.getAll("goals"),
+    incomeRange: fd.get("income") || null,
+    note: (fd.get("note")||"").trim() || null,
+    consent: {
+      contact: { text: "Contact me about a free introductory meeting.", version: WAITLIST.CONSENT_VERSION, timestamp: now },
+      sms: $("#wl-sms").checked ? { text: smsText(), version: WAITLIST.CONSENT_VERSION, timestamp: now } : null
+    },
+    meta: { source: "website-waitlist", submittedAt: now, honeypot: fd.get("company") || "" }
+  };
+}
+
+form.addEventListener("submit", async e=>{
+  e.preventDefault();
+  const ok = ["name","phone","email"].map(k=>check(k)).every(Boolean);
+  if (!ok){
+    haptic([10,40,10]);
+    const first = ["name","phone","email"].find(k=>!check(k,false));
+    $("#wl-"+first).focus();
+    return;
+  }
+  const payload = buildPayload();
+  if (payload.meta.honeypot) return; // silent drop for bots
+  const btn = $("#wl-submit");
+  btn.disabled = true; btn.textContent = "Sending request…";
+  try{
+    await WAITLIST.submit(payload);
+    haptic(18);
+    $("#formView").hidden = true;
+    $("#successView").hidden = false;
+    $("#successView h2").focus?.();
+    $("#successView").setAttribute("tabindex","-1"); $("#successView").focus();
+  }catch(err){
+    $("#err-email").textContent = "We couldn't send your request. Please try again, or call (763) 900-2029.";
+  }finally{
+    btn.disabled = false; btn.textContent = "Join the Meeting Waitlist";
+  }
+});
+$("#wl-reset").addEventListener("click", ()=>{
+  form.reset();
+  $$(".field.invalid").forEach(f=>f.classList.remove("invalid"));
+  $$(".err").forEach(e=>e.textContent="");
+  $("#successView").hidden = true; $("#formView").hidden = false;
+  $("#wl-name").focus();
+});
+
+/* Smooth focus to form from any CTA */
+$$("[data-focus-form]").forEach(a=>a.addEventListener("click", e=>{
+  e.preventDefault(); haptic();
+  const card = $("#waitlist");
+  card.scrollIntoView({behavior: reduceMotion ? "auto" : "smooth", block:"start"});
+  setTimeout(()=>{ const n = $("#formView").hidden ? $("#wl-reset") : $("#wl-name"); n.focus({preventScroll:true}); }, reduceMotion ? 0 : 450);
+}));
+
+/* Privacy placeholder */
+function openPrivacy(){ const p=$("#privacy"); p.hidden=false; $("#privacyToggle").setAttribute("aria-expanded","true"); p.scrollIntoView({behavior: reduceMotion?"auto":"smooth", block:"center"}); }
+$("#privacyToggle").addEventListener("click", ()=>{ const p=$("#privacy"); p.hidden=!p.hidden; $("#privacyToggle").setAttribute("aria-expanded", String(!p.hidden)); });
+$$("[data-open-privacy]").forEach(a=>a.addEventListener("click", e=>{ e.preventDefault(); openPrivacy(); }));
+
+/* Copy buttons */
+$$("[data-copy]").forEach(b=>b.addEventListener("click", async ()=>{
+  const el = document.getElementById(b.dataset.copy);
+  try{ await navigator.clipboard.writeText(el.textContent.trim()); b.textContent="Copied"; }
+  catch(e){ const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent="Selected"; }
+  haptic(); setTimeout(()=>b.textContent="Copy",1600);
+}));
+
+/* ---------- Range fill helper ---------- */
+function paintRange(r){ const p=(r.value-r.min)/(r.max-r.min)*100; r.style.setProperty("--p", p+"%"); }
+
+/* ---------- A. Growth calculator ---------- */
+const G = { m:$("#g-monthly"), s:$("#g-start"), sn:$("#g-start-num"), y:$("#g-years"), r:$("#g-rate") };
+function compact(v){ if(v>=1e6) return "$"+(v/1e6).toFixed(v>=1e7?0:1).replace(/\.0$/,"")+"M"; if(v>=1e3) return "$"+Math.round(v/1e3)+"k"; return "$"+Math.round(v); }
+function niceMax(v){ if(v<=0) return 1000; const p=Math.pow(10,Math.floor(Math.log10(v))); const n=v/p; const step = n<=1?1:n<=2?2:n<=2.5?2.5:n<=5?5:10; return step*p; }
+function growthSeries(monthly,start,years,rate){
+  const r = rate/100/12; let bal=start, contrib=start; const pts=[{y:0,bal,contrib}];
+  for(let mth=1;mth<=years*12;mth++){ bal = bal*(1+r) + monthly; contrib += monthly; if(mth%12===0) pts.push({y:mth/12,bal,contrib}); }
+  return pts;
+}
+function drawGrowth(){
+  const monthly=+G.m.value, start=+G.s.value, years=+G.y.value, rate=+G.r.value;
+  $("#o-monthly").textContent = usd.format(monthly)+"/mo";
+  $("#o-years").textContent = years + (years===1?" year":" years");
+  $("#o-rate").textContent = rate.toFixed(1)+"%";
+  if (document.activeElement!==G.sn) G.sn.value = usd.format(start);
+  const pts = growthSeries(monthly,start,years,rate), last = pts[pts.length-1];
+  $("#r-contrib").textContent = usd.format(last.contrib);
+  $("#r-growth").textContent = usd.format(Math.max(0,last.bal-last.contrib));
+  $("#r-total").textContent = usd.format(last.bal);
+
+  const W=600,H=260,L=54,R=14,T=14,B=30, iw=W-L-R, ih=H-T-B;
+  const ymax = niceMax(Math.max(last.bal, 1));
+  const x = yr => L + (yr/years)*iw, y = v => T + ih - (v/ymax)*ih;
+  let svg = "";
+  for(let i=0;i<=4;i++){ const v=ymax*i/4, yy=y(v); svg += `<line class="grid" x1="${L}" x2="${W-R}" y1="${yy}" y2="${yy}"/><text class="tick" x="${L-8}" y="${yy+4}" text-anchor="end">${compact(v)}</text>`; }
+  const stepYr = years<=5?1:years<=10?2:years<=20?5:10;
+  for(let yr=0;yr<=years;yr+=stepYr){ svg += `<text class="tick" x="${x(yr)}" y="${H-8}" text-anchor="middle">${yr===0?"Now":"Yr "+yr}</text>`; }
+  const line = k => pts.map((p,i)=>(i?"L":"M")+x(p.y).toFixed(1)+","+y(p[k]).toFixed(1)).join("");
+  const area = k => line(k)+`L${x(years)},${y(0)}L${x(0)},${y(0)}Z`;
+  svg += `<path class="a-growth" d="${area("bal")}"/><path class="a-contrib" d="${area("contrib")}"/>`;
+  svg += `<path class="l-contrib" d="${line("contrib")}"/><path class="l-growth" d="${line("bal")}"/>`;
+  svg += `<circle class="dot" cx="${x(years)}" cy="${y(last.bal)}" r="5.5"/>`;
+  $("#growthChart").innerHTML = svg;
+  [G.m,G.s,G.y,G.r].forEach(paintRange);
+}
+[G.m,G.s,G.y,G.r].forEach(el=>el.addEventListener("input", drawGrowth));
+G.sn.addEventListener("change", ()=>{ const v=Math.max(0,Math.min(1e7, +G.sn.value.replace(/[^\d.]/g,"")||0)); G.s.max = Math.max(50000, Math.ceil(v/500)*500); G.s.value=v; drawGrowth(); G.sn.value=usd.format(v); });
+G.sn.addEventListener("focus", ()=>{ G.sn.value = G.s.value; G.sn.select(); });
+G.sn.addEventListener("blur", ()=>{ G.sn.value = usd.format(+G.s.value); });
+
+/* ---------- B. Savings cushion ---------- */
+const C = { e:$("#c-ess"), c:$("#c-cur"), m:$("#c-mon") }; let target=3;
+$$(".seg button").forEach(b=>b.addEventListener("click", ()=>{
+  target=+b.dataset.m; $$(".seg button").forEach(x=>x.setAttribute("aria-pressed", String(x===b))); haptic(); drawCushion();
+}));
+function drawCushion(){
+  const ess=+C.e.value, cur=+C.c.value, mon=+C.m.value;
+  $("#o-ess").textContent=usd.format(ess); $("#o-cur").textContent=usd.format(cur); $("#o-mon").textContent=usd.format(mon)+"/mo";
+  const goal=ess*target, short=Math.max(0,goal-cur), pct=Math.min(100, goal? cur/goal*100 : 0);
+  $("#r-goal").textContent=usd.format(goal);
+  $("#r-short").textContent= short===0 ? "$0 · met" : usd.format(short);
+  let mt;
+  if(short===0) mt="Reached";
+  else if(mon<=0) mt="Add a monthly amount";
+  else { const n=Math.ceil(short/mon); mt = n<12 ? n+(n===1?" month":" months") : (()=>{const yy=Math.floor(n/12), mm=n%12; return `${n} mo (${yy} yr${yy>1?"s":""}${mm?" "+mm+" mo":""})`; })(); }
+  $("#r-months").textContent=mt;
+  $("#c-fill").style.width=pct+"%";
+  $("#c-bar").setAttribute("aria-valuenow", Math.round(pct));
+  $("#c-pct").textContent=Math.round(pct)+"% funded";
+  $("#c-goal-lbl").textContent=target+"-month goal";
+  const box=$("#c-months"); box.style.gridTemplateColumns=`repeat(${target},1fr)`;
+  box.innerHTML = Array.from({length:target},(_,i)=>{ const fill=Math.max(0,Math.min(1,(cur-i*ess)/ess)); return `<span class="${fill>=1?"full":""}" style="--h:${(fill*100).toFixed(0)}%"><em>Mo ${i+1}</em></span>`; }).join("");
+  Object.values(C).forEach(paintRange);
+}
+Object.values(C).forEach(el=>el.addEventListener("input", drawCushion));
+
+drawGrowth(); drawCushion();
+
+/* ---------- Light reveal (content visible at rest; only enhances) ---------- */
+if (!reduceMotion && "IntersectionObserver" in window){
+  const io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.remove("pre"); io.unobserve(en.target); } }),{rootMargin:"0px 0px -8% 0px"});
+  $$(".reveal").forEach(el=>{ const r=el.getBoundingClientRect(); if(r.top > innerHeight){ el.classList.add("pre"); io.observe(el); } });
+}
+
+/* ---------- Sticky mobile CTA hides while the form is on screen ---------- */
+if ("IntersectionObserver" in window){
+  const m=$("#mcta");
+  new IntersectionObserver(es=>es.forEach(en=>m.classList.toggle("away", en.isIntersecting)),{threshold:.15}).observe($("#waitlist"));
+}
+</script>
+
+</body>
+</html>
